@@ -1,5 +1,11 @@
 package com.yc.algorithm.sort;
-
+/**
+ * 排序算法稳定性: 通俗地讲就是能保证排序前2个相等的数其在序列的前后位置顺序和排序后它们两个的前后位置顺序相同。
+ * 如，如果Ai = Aj，Ai原来在位置前，排序后Ai还是要在Aj位置前
+ * 快速排序: 平均时间复杂度O(nlgn) 最好的情况O(nlgn)  最坏的情况O(n^2) 空间复杂度O(nlgn)--用到O(nlgn)的栈深度实现递归  不稳定
+ * @author YC
+ *
+ */
 public class QuickSort {
 	public static void main(String[] args) {
 		int[] arr = new int[] {
