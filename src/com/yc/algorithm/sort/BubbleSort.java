@@ -1,7 +1,7 @@
 package com.yc.algorithm.sort;
 
 // 冒泡排序
-// 平均时间复杂度: O(n^2)   最坏情况: O(n^2)  最好情况 O(n)
+// 平均时间复杂度: O(n^2)   最坏情况: O(n^2)  最好情况 O(n)  稳定
 // 最好情况下: 第一趟一次都没有交换数据,说明数组本身就是有序,不用再循环,直接跳出(使用 boolean isSwap 标记)
 public class BubbleSort {
 	
@@ -32,10 +32,14 @@ public class BubbleSort {
 					System.out.print(arr[k] + " ");
 				System.out.println();
 			}
+			// 第一趟没有发生交换说明数组本来就是有序,直接返回,剩下的 i=1 - arr.length - 2 都不用在执行了,
+			// 所以 最好情况下时间复杂度O(n)
 			if(!isSwap)
 				return;
 		}
 		
 	}
+	
+	
 	
 }

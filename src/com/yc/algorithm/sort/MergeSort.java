@@ -1,7 +1,7 @@
 package com.yc.algorithm.sort;
 
 /**
- * 归并排序: 采用分治算法,平均时间复杂度O(nlgn),最坏情况O(nlgn),最好情况O(nlgn),空间复杂度O(n)
+ * 归并排序: 采用分治算法,平均时间复杂度O(nlgn),最坏情况O(nlgn),最好情况O(nlgn),空间复杂度O(n) 稳定
  * @author YC
  *
  */
